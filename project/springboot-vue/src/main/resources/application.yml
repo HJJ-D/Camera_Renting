@@ -1,0 +1,27 @@
+# 项目端口
+server:
+  port: 8080
+# 连接池配置
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/camera_renting?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+# jwt配置
+jwt:
+  secret: hahahahage  #密匙KEY
+  expire: 7200  #过期时间 单位分钟
+  tokenHeader: Authorization  #请求头
+  tokenHead: WangXin3-  #Token前缀字符
+
+# mybatis
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml #映射文件配置
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名
+
+logback:
+  logPath: /logs #日志文件存放位置
+

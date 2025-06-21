@@ -1,0 +1,136 @@
+{
+  "RootName": "DataModels",
+  "CTVER": "43543331",
+  "TableCount": 2,
+  "Count": 1,
+  "items": [{
+    "ID": 4,
+    "Name": "Model4",
+    "CreateDate": "2025/2/12 20:47:26",
+    "OrderNo": 1,
+    "Tables": {
+      "Count": 2,
+      "items": [
+        {
+          "ID": 1,
+          "Name": "Camera",
+          "Caption": "Camera",
+          "CreateDate": "2025/2/12 20:47:31",
+          "OrderNo": 1,
+          "GraphDesc": "Left=280.00\r\nTop=206.00\r\nBLeft=140.00\r\nBTop=103.00",
+          "MetaFields": {
+            "Count": 2,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "Camera_Id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}"
+              },
+              {
+                "ID": 2,
+                "Name": "Camera_Name",
+                "OrderNo": 2,
+                "DataType": 1
+              }
+            ]
+          }
+        },
+        {
+          "ID": 2,
+          "Name": "Rent_Record",
+          "Caption": "Rent_Record",
+          "Memo": "租赁表",
+          "CreateDate": "2025/2/12 22:12:53",
+          "OrderNo": 2,
+          "GraphDesc": "Left=599.00\r\nTop=191.00\r\nBLeft=299.50\r\nBTop=95.50",
+          "MetaFields": {
+            "Count": 10,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "Rent_Id",
+                "OrderNo": 1,
+                "DisplayName": "Rent_Id",
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}"
+              },
+              {
+                "ID": 7,
+                "Name": "Camera_Id",
+                "OrderNo": 2,
+                "DisplayName": "Camera_Id",
+                "DataType": 2,
+                "RelateTable": "Camera",
+                "RelateField": "Camera_Id"
+              },
+              {
+                "ID": 13,
+                "Name": "Rentor_Name",
+                "OrderNo": 3,
+                "DisplayName": "Rentor_Name",
+                "DataType": 1
+              },
+              {
+                "ID": 9,
+                "Name": "Create_Date",
+                "Memo": "Current time",
+                "OrderNo": 4,
+                "DisplayName": "Create_Date",
+                "DataType": 4,
+                "DefaultValue": "sysdate",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 14,
+                "Name": "Rent_Date",
+                "OrderNo": 5,
+                "DisplayName": "Rent_Date",
+                "DataType": 1
+              },
+              {
+                "ID": 15,
+                "Name": "Send_Date",
+                "OrderNo": 6,
+                "DisplayName": "Send_Date",
+                "DataType": 4
+              },
+              {
+                "ID": 16,
+                "Name": "Return_Date",
+                "OrderNo": 7,
+                "DisplayName": "Return_Date",
+                "DataType": 4
+              },
+              {
+                "ID": 8,
+                "Name": "Address",
+                "Memo": "地址",
+                "OrderNo": 8,
+                "DisplayName": "Address",
+                "DataType": 1
+              },
+              {
+                "ID": 9,
+                "Name": "Phone",
+                "OrderNo": 9,
+                "DisplayName": "Phone",
+                "DataType": 1
+              },
+              {
+                "ID": 10,
+                "Name": "WeChat_Id",
+                "OrderNo": 10,
+                "DisplayName": "WeChat_Id",
+                "DataType": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }]
+}
